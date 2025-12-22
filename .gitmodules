@@ -76,6 +76,6 @@
 [submodule "tools/adore_model_checker"]
 	path = tools/adore_model_checker
 	url = git@github.com:DLR-TS/adore_model_checker.git
-[submodule "ros2_workspace/src/path_planner"]
-	path = ros2_workspace/src/path_planner
+[submodule "adore_ros2_nodes/path_planner"]
+	path = adore_ros2_nodes/path_planner
 	url = git@github.com:MalteHauff/path_planner.git
