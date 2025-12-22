@@ -32,3 +32,9 @@ python3-flask-cors
 
 jq
 x11-utils
+
+libblas-dev
+liblapack-dev
+libeigen3-dev
+libboost-all-dev
+libdlib-dev

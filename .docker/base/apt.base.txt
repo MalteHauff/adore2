@@ -30,3 +30,10 @@ geographiclib-tools
 sumo
 sumo-tools
 sumo-doc
+
+
+libblas-dev
+liblapack-dev
+libeigen3-dev
+libboost-all-dev
+libdlib-dev
