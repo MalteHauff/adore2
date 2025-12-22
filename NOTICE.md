@@ -33,3 +33,32 @@ another country, of encryption software. BEFORE using any encryption software,
 please check the country's laws, regulations and policies concerning the import,
 possession, or use, and re-export of encryption software, to see if this is
 permitted.
+
+## Security
+
+⚠️ **WARNING:** This project is intended for research purposes only.
+
+Running this project exposes a web interface that could allow arbitrary code 
+execution. Do not expose this service to untrusted networks or the public 
+internet. Only run in isolated, controlled environments.
+
+To disable the web interface/api please modify the `adore.env` config parameter:
+`ENABLE_ADORE_API=false`
+
+# NOTICE
+
+This project incorporates third-party libraries and tools.  
+For a complete itemization of all thrid-party inclusions in 
+this project please see [THIRD-PARTY.md](THIRD-PARTY.md)
+
+
+## Documentation Tools
+
+This project makes use of the following third-party documentation tools:
+
+### MkDocs
+- **Website:** https://www.mkdocs.org/  
+- **License:** BSD 2-Clause "Simplified" License  
+- Copyright (c) 2014-2024, MkDocs Project contributors
+ 
+

@@ -27,7 +27,7 @@ This guide will help you get your system set up and configured to run ADORe.
 
 
 ```bash
-git clone git@github.com:DLR-TS/adore.git
+git clone git@github.com:eclipse-adore/adore.git
 cd adore
 git submodule update --init --recursive
 ```
@@ -36,35 +36,44 @@ git submodule update --init --recursive
 
 > **ℹ️INFO:** If you would rather clone ADORe anonymously over https please review the [Anonymous Cloning 🔗](../system_and_development/anonymous_cloning.md) guide.
 
-## Building ADORe
+## Building ADORe Developer Environment
 > **⚠️ WARNING:**
-> To use ADORe you must have Docker, and GNU Make installed and configured for you user.
+> To use the ADORe developer environment you must have Docker installed.
 
-Build the ADORe Docker context, known as ADORe CLI, in the base of the ADORe repository:
+To have the easiest entry you can [install just](https://github.com/casey/just)
+
+and run:
 ```bash
-make build
+just dev
 ```
 
-> **ℹ️INFO:** On first run of the ADORe CLI the entire system will be built. 
-> Initial build can take 10-15 minutes depending on system and network.
+Alternatively, simple call
 
-## Running ADORe
-After cloning and satisfying all system prerequisites and building ADORe
-you can start the ADORe CLI interactive shell docker context.
-To do this navigate to the root of the ADORe repository directory
-and run the following command:
 ```bash
-make cli
+.docker/scripts/run_dev.sh
 ```
 
-> **✅ SUCCESS:**
-> If you are greeted with the following ADORe CLI car then you have successfully setup ADORe:
-```
-            ____ 
-         __/  |_\__
-        |           -. 
-  ......'-(_)---(_)--' 
+This will create and the developer environment where you can build all relevant packages with
+
+```bash
+just build
 ```
 
+The full command list is available with
 
-> **✅ INFO:** Next steps...
+```bash
+just help
+```
+
+> **⚠️ WARNING:**
+> Building ADORe **will** fail until all submodules have been properly initialized. 
+> If cloning or repository initialization fails refer to the
+> [troubleshooting](../problems_and_solutions.md) guide before proceeding.
+> Do not proceed with building ADORe until `git submodule update --init --receive`
+> finishes without error. 
+
+Next proceed to [Running Your First Scenario 🔗](running_your_first_scenario.md) 
+
+## Using in an existing ROS2 project
+
+The ADORe packages adore_(libraries/ros2_conversions/ros2_msgs/ros2_nodes/scenarios) can all be used directly in your existing ros2 project by pasting or symlining them into you ros2/colcon workspace.
