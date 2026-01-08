@@ -105,3 +105,7 @@
 [submodule "tools/adore_model_checker"]
 	path = vendor/adore_model_checker
 	url = git@github.com:DLR-TS/adore_model_checker.git
+[submodule "fm-adore-interface"]
+	path = fm-adore-interface
+	url = git@gitlab.dlr.de:dlr-fm/use-cases/ts-use-case/fm-adore-interface.git
+	branch = malte_dev
