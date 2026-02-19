@@ -38,7 +38,8 @@
 	url = git@github.com:DLR-TS/ros2_observer.git
 [submodule "libraries/adore_planning"]
 	path = adore_libraries/adore_planning
-	url = git@github.com:eclipse-adore/adore_planning.git
+	url = git@github.com:MalteHauff/adore_planning.git
+	branch = feature/passenger_requests
 [submodule "libraries/adore_controllers"]
 	path = adore_libraries/adore_controllers
 	url = git@github.com:eclipse-adore/adore_controllers.git
