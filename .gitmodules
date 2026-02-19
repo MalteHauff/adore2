@@ -51,7 +51,8 @@
 	url = git@github.com:eclipse-adore/adore_math.git
 [submodule "libraries/adore_dynamics"]
 	path = adore_libraries/adore_dynamics
-	url = git@github.com:eclipse-adore/adore_dynamics.git
+	url = git@github.com:MalteHauff/adore_dynamics.git
+	branch = feature/passenger_requests
 [submodule "conversions/adore_dynamics_conversions"]
 	path = adore_ros2_conversions/adore_dynamics_conversions
 	url = git@github.com:eclipse-adore/adore_dynamics_conversions.git
