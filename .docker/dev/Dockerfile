@@ -8,6 +8,21 @@ RUN apt-get update && \
     xargs -r -a /tmp/apt.dev.txt apt-get install -y && \
     rm -rf /var/lib/apt/lists/* /tmp/*
 
+
+COPY .docker/dev/pip.dev.txt /tmp/pip.dev.txt
+
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:${PATH}"
+
+RUN python -m pip install -U pip && \
+    python -m pip install --no-cache-dir -r /tmp/pip.dev.txt && \
+    python -c "import faster_whisper; print('venv deps OK')"
+    
+RUN grep -vE '^(ipython==|ipython$|pandas==|pandas$)' /tmp/pip.dev.txt > /tmp/pip.ros.txt && \
+    /usr/bin/python3 -m pip install --break-system-packages --no-cache-dir -r /tmp/pip.ros.txt && \
+    /usr/bin/python3 -c "import langchain_community, dotenv; print('system deps OK')"
+
+
 # Helix editor
 RUN curl -L https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz \
     | tar -xJ && \

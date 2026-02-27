@@ -23,10 +23,12 @@ ros-jazzy-rclcpp-components
 ros-jazzy-cv-bridge
 ros-jazzy-rosbridge-server
 ros-jazzy-foxglove-msgs
-
+ros-jazzy-rmw-cyclonedds-cpp
 libgeographiclib-dev
 geographiclib-tools
 
 sumo
 sumo-tools
 sumo-doc
+
+ffmpeg

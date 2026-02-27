@@ -17,6 +17,7 @@ ros-jazzy-rqt-common-plugins
 ros-jazzy-foxglove-bridge
 ros-jazzy-ros2trace
 ros-jazzy-tracetools-analysis
+ros-jazzy-rmw-cyclonedds-cpp
 
 babeltrace
 lttng-modules-dkms
@@ -35,3 +36,24 @@ python3-flask-cors
 
 jq
 x11-utils
+
+
+ffmpeg
+python3-pip
+python3-venv
+python3-full
+
+portaudio19-dev
+libportaudio2
+alsa-base
+alsa-utils
+libasound2t64
+libasound2-plugins
+alsa-ucm-conf
+build-essential
+graphviz
+graphviz-dev
+pkg-config
+python3-dotenv
+python3-tornado
+python3-pymongo
