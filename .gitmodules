@@ -45,7 +45,8 @@
 	url = git@github.com:eclipse-adore/adore_controllers.git
 [submodule "libraries/adore_map"]
 	path = adore_libraries/adore_map
-	url = git@github.com:eclipse-adore/adore_map.git
+	url = git@github.com:MalteHauff/adore_map.git
+	branch = feature/passenger_requests
 [submodule "libraries/adore_math"]
 	path = adore_libraries/adore_math
 	url = git@github.com:eclipse-adore/adore_math.git
