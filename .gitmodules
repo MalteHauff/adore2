@@ -1,6 +1,7 @@
 [submodule "ros2_messages/adore_ros2_msgs"]
 	path = adore_ros2_msgs
-	url = git@github.com:eclipse-adore/adore_ros2_msgs.git
+	url = git@github.com:MalteHauff/adore_ros2_msgs.git
+	branch = feature/passenger_requests
 [submodule "nodes/adore_simulated_vehicle"]
 	path = adore_ros2_nodes/simulated_vehicle
 	url = git@github.com:eclipse-adore/adore_simulated_vehicle.git
