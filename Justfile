@@ -123,6 +123,9 @@ docs: setup_colcon_src
 ci: setup_colcon_src
     cd "$WORKSPACE_ROOT" && .docker/scripts/run_ci.sh
 
+publish:
+    cd "$WORKSPACE_ROOT" && documentation/publish_gh-pages.sh
+
 # -------------------------------------------------------------------
 # ADORe API control (via tools/adore_api/adore_api.sh)
 # -------------------------------------------------------------------
@@ -211,7 +214,7 @@ build_vendor:
 # -------------------------------------------------------------------
 
 # Clean and rebuild documentation (mkdocs + docs/)
-docs_all: docs_clean docs_build
+docs_all: docs_clean docs_serve
 
 # Build mkdocs site into documentation/mkdocs/site
 docs_build_mkdocs:

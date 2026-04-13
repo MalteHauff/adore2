@@ -76,14 +76,17 @@
 	url = https://github.com/robotology/osqp-eigen.git
 [submodule "vendor/multi_agent_solver"]
 	path = vendor/multi_agent_solver
-	url = https://github.com/markomiz/multi_agent_solver.git
+	url = git@github.com:markomiz/multi_agent_solver.git
 [submodule "vendor/osqp"]
 	path = vendor/osqp
 	url = https://github.com/osqp/osqp.git
 [submodule "tools/adore_model_checker"]
 	path = tools/adore_model_checker
 	url = git@github.com:DLR-TS/adore_model_checker.git
+[submodule "vendor/caches"]
+	path = vendor/caches
+	url = git@github.com:s0nofab1t/caches.git
+	branch = feature/wfs-downloader
 [submodule "adore_ros2_nodes/fm_adore_interface"]
-	path = adore_ros2_nodes/fm_adore_interface
 	url = git@gitlab.dlr.de:dlr-fm/use-cases/ts-use-case/fm-adore-interface.git
 	branch = malte_dev
