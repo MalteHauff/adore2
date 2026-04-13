@@ -21,7 +21,8 @@
 	url = git@github.com:eclipse-adore/adore_trajectory_tracker.git
 [submodule "adore_scenarios/adore_simulation_scenarios"]
 	path = adore_scenarios/simulation_scenarios
-	url = git@github.com:eclipse-adore/adore_simulation_scenarios.git
+	url = git@github.com:MalteHauff/adore_simulation_scenarios.git
+	branch = feature/passenger_requests
 [submodule "vendor/libOpenDRIVE"]
 	path = vendor/libOpenDRIVE
 	url = git@github.com:markomiz/libOpenDRIVE.git
