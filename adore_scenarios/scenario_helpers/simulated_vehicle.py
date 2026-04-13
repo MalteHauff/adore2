@@ -104,7 +104,11 @@ def _build_composable_components(
                 {"planner_settings_values": list(planner_params.values())},
                 {"vehicle_model_file": model_file},
                 {"v2x_id": v2x_id},
+                {"map_file": map_file},
+                {"map_allow_lane_changes": True},
+                {"map_ignoring_non_driving": False},
                 topic_params=topic_params,
+                
             ),
         ),
         ComposableNode(
@@ -187,6 +191,9 @@ def _build_standalone_nodes(
                 {"planner_settings_values": list(planner_params.values())},
                 {"vehicle_model_file": model_file},
                 {"v2x_id": v2x_id},
+                {"map_file": map_file},
+                {"map_allow_lane_changes": True},
+                {"map_ignoring_non_driving": False},
                 topic_params=topic_params,
             ),
         ),

@@ -3,6 +3,7 @@ fzf
 zsh-syntax-highlighting
 zsh-autosuggestions
 
+tmux
 htop
 tree
 bat
@@ -57,3 +58,4 @@ pkg-config
 python3-dotenv
 python3-tornado
 python3-pymongo
+

@@ -15,7 +15,8 @@
 set -e
 
 # === CONFIGURATION ===
-LICHTBLICK_IMAGE="ghcr.io/lichtblick-suite/lichtblick:latest"
+#LICHTBLICK_IMAGE="ghcr.io/lichtblick-suite/lichtblick:latest"
+LICHTBLICK_IMAGE="ghcr.io/lichtblick-suite/lichtblick:1.23.1"
 HOST_PORT=8080
 CONTAINER_PORT=8080
 
@@ -50,9 +51,12 @@ GREEN='\033[1;32m'
 RESET='\033[0m'
 
 echo
-printf "${GREEN}Open this URL in your browser:\n"
-printf "  http://localhost:%s/?ds=rosbridge-websocket&ds.url=ws%%3A%%2F%%2Flocalhost%%3A8765\n${RESET}" "${HOST_PORT}"
+URL="http://localhost:${HOST_PORT}/?ds=foxglove-websocket&ds.url=ws%3A%2F%2F127.0.0.1%3A8765"
+printf "${GREEN}Open this URL in your browser:\n  %s\n${RESET}" "$URL"
+#printf "${GREEN}Open this URL in your browser:\n"
+#printf "  http://localhost:%s/?ds=rosbridge-websocket&ds.url=ws%%3A%%2F%%2Flocalhost%%3A8765\n${RESET}" "${HOST_PORT}"
 echo
+
 # === Run Lichtblick container with 3D model mount ===
 docker run --rm \
     -p "${HOST_PORT}:${CONTAINER_PORT}" \
