@@ -8,7 +8,7 @@
 [submodule "mission_control"]
 	path = ros2_workspace/src/adore_ros2_nodes/mission_control
 	url = git@github.com:MalteHauff/adore_mission_control.git
-	branch = feature/passenger_requests
+	branch = feature/passenger_requests_upstream_integration
 [submodule "nodes/adore_visualizer"]
 	path = ros2_workspace/src/adore_ros2_nodes/visualizer
 	url = git@github.com:eclipse-adore/adore_visualizer.git
@@ -22,7 +22,6 @@
 [submodule "adore_scenarios/adore_simulation_scenarios"]
 	path = adore_scenarios/simulation_scenarios
 	url = git@github.com:MalteHauff/adore_simulation_scenarios.git
-	branch = feature/passenger_requests
 [submodule "interfaces/sumo_bridge"]
 	path = ros2_workspace/src/adore_interfaces/sumo_bridge
 	url = git@github.com:eclipse-adore/sumo_if_ros.git
