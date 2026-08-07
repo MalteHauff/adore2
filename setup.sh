@@ -55,6 +55,10 @@ source "${SCRIPT_DIRECTORY}/adore.env"
 PYVER=$(python3 -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}')")
 export PYTHONPATH="/opt/adore_venv/lib/python${PYVER}/site-packages:/usr/lib/python3/dist-packages:${PYTHONPATH}"
 
+NVIDIA_PYTHON_LIB_ROOT="/opt/adore_venv/lib/python${PYVER}/site-packages/nvidia"
+export LD_LIBRARY_PATH="${NVIDIA_PYTHON_LIB_ROOT}/cublas/lib:${NVIDIA_PYTHON_LIB_ROOT}/cudnn/lib:${LD_LIBRARY_PATH:-}"
+
+
 bash ${SCRIPT_DIRECTORY}/tools/adore_api/adore_api.sh
 
 bash ${SCRIPT_DIRECTORY}/tools/start_zenoh_router.sh
